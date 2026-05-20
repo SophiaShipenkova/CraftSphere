@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0
+asyncpg
+alembic
+pydantic-settings
+bcrypt>=4.1.0
+python-jose[cryptography]
+email-validator
+python-multipart

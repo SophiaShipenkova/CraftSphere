@@ -1,0 +1,13 @@
+**/node_modules
+**/dist
+**/.venv
+**/venv
+**/__pycache__
+**/*.pyc
+.git
+*.log
+.DS_Store
+.cursor
+*.pdf
+gen_presentation.js
+speech_notes.md

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru" data-overlayscrollbars-initialize>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CraftSphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      ;(function () {
+        try {
+          var k = 'craftsphere-theme'
+          var d = document.documentElement
+          var s = localStorage.getItem(k)
+          d.setAttribute('data-theme', s === 'dark' ? 'dark' : 'light')
+          d.style.colorScheme = s === 'dark' ? 'dark' : 'light'
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light')
+        }
+      })()
+    </script>
+  </head>
+  <body data-overlayscrollbars-initialize>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
