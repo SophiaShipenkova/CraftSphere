@@ -34,6 +34,8 @@ docker compose up -d
 
 ### 3. Запустить backend
 
+Открой первый терминал и выполни:
+
 **Windows:**
 ```bash
 cd backend
@@ -56,12 +58,19 @@ python -m app.db.init_db
 uvicorn app.main:app --reload
 ```
 
+Оставь это окно открытым.
+
 ### 4. Запустить frontend
+
+Открой **второй** терминал и выполни:
+
 ```bash
-cd frontend
+cd CraftSphere/frontend
 npm install
 npm run dev
 ```
+
+Оставь это окно открытым.
 
 ## Адреса
 - Frontend: http://localhost:5173
